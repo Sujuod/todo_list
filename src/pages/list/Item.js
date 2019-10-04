@@ -36,7 +36,6 @@ export const Item = ({ taskInfo: { name, desc, status, item_id }, onChangeStatus
                             <button type="button" className="close more-options"><img src={MoreIcon} width="18px" alt="more" /></button>
                             <div ref={ref}>
                                 <Dropdown.Menu show={visible} >
-                                    <Dropdown.Header>Mark as:</Dropdown.Header>
                                     {Object.keys(STATUS_CODES).map((key) => (<Dropdown.Item onClick={() => (onChangeStatus(key, item_id))} key={key}><span className={`status-color d-inline-block mr-2 bg-${whichCardClass(key)}`} ></span>{STATUS_CODES[key]}</Dropdown.Item>))}
                                     <Dropdown.Divider />
                                     <Dropdown.Item onClick={() => onDeleteItem(item_id)} eventKey="3">Remove</Dropdown.Item>
