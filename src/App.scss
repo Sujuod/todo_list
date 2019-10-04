@@ -1,0 +1,171 @@
+
+
+.app-logo {
+  background: #ccc;
+  display: inline-block;
+  border-radius: 50%;
+}
+
+.App-link {
+  color: #09d3ac;
+}
+
+.form-container{
+  margin: 10%;
+}
+
+.App-header{
+  display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.has-error .form-control{
+  border-color: #d39e00;
+}
+
+.has-error .help-block{
+  color: #d39e00;
+}
+
+
+.wrapper-login{
+
+width: 900px;
+border-radius: 10px;
+overflow: hidden;
+padding: 35px 55px 37px 55px;
+background: #286088;
+}
+// @media (max-width: 576px) {
+//   .wrapperlogin {
+//     padding: 55px 15px 37px 15px;
+//   }
+// }
+.wrapper-list{
+width: 900px;
+border-radius: 10px;
+overflow: hidden;
+padding: 35px 15px 37px 15px;
+background: #e9e7e7;
+}
+
+
+.App{
+  background-image: url('./todolistbackground.jpeg');
+  font-family: Lato, sans-serif;
+    width: 100%;  
+    min-height: 100vh;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+    padding: 15px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    z-index: 1;  
+  }
+
+  .App::before {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color:rgba(255, 255, 255, 0.63)
+  }
+  
+  .user-form-title{
+    font-weight: bold;
+    font-size: 30px;
+    color: #fff;
+    line-height: 1.2;
+    text-align: center;
+    text-transform: uppercase;
+  
+    display: block;
+  }
+
+  .btn-container{
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .center a, .center a:hover{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: #c0bebc;
+  }
+
+  .more-options:focus{
+    outline: none;
+    img {
+      width:"18px";
+    }
+  }
+
+.btn-circle.btn-xl {
+  width: 60px;
+  height: 60px;
+  padding: 10px 16px;
+  border-radius: 35px;
+  font-size: 24px;
+  line-height: 1.33;
+}
+
+.app-footer{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;  
+  justify-content: flex-end;
+}
+
+.logout{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;  
+  justify-content: flex-end;
+}
+
+.cards-list{
+  max-height: 500px;
+  overflow-y: scroll;
+  margin: 3px;
+}
+
+.app-heading{
+  text-align: center;
+    color: white;
+    font-size: x-large;
+}
+
+.status-color {
+  height: 13px;
+  width: 13px;
+}
+
+.border-danger{
+  .card-header{
+    text-decoration:line-through;
+  }
+}
+
+.task-status {
+  font-size: 12px;
+}
